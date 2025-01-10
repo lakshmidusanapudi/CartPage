@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7af22044dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHkIpRPUew_1g/company-logo_200_200/company-logo_200_200/0/1630574233310/marmeto_logo?e=2147483647&v=beta&t=xMOiyijolXyb3lkwgcjYA0tIEG7b4Sd4PCXQoNkK-mA">
+        Marmeto
+      </div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="hamburger-menu" onclick="toggleNav()">
+        &#9776; 
+      </div>
+    </div>
+  </header>
+
+  <!-- Background Image Container -->
+  <div class="backgroundimagecontainer">
+    <h1>Cart</h1>
+    <p>Home > Cart</p>
+  </div>
+
+  <!-- Cart Items -->
+  <div class="container cart-page">
+    <div class="cart-content">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th> </th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart Items will go here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cart Totals -->
+    <div class="cart-totals">
+      <h2>Cart Totals</h2>
+      <div class="totals">
+        <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+        <p>Total: <span id="total">₹0.00</span></p>
+      </div>
+      <button class="checkout-btn">Check Out</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-icons">
+        <div><img src="https://cdn-icons-png.flaticon.com/128/9359/9359486.png"> High Quality
+          <p>Crafted from top materials</p>
+        </div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/7494/7494382.png"> Warranty Protection
+          <p>Over 2 years</p>
+        </div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/411/411776.png"> Free Shipping
+          <p>Order over 150$</p>
+        </div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/6116/6116634.png"> 24/7 Support
+          <p>Dedicated Support</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
